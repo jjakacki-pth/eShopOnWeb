@@ -1,15 +1,15 @@
 name: eShopOnWeb Build and Test
 
 #Triggers (uncomment line below to use it)
-#on: [push, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
-  RESOURCE-GROUP: rg-az400-eshoponweb-NAME
-  LOCATION: westeurope
+  RESOURCE-GROUP: pth-t-jj1-devops-test-rg
+  LOCATION: eastus
   TEMPLATE-FILE: .azure/bicep/webapp.bicep
-  SUBSCRIPTION-ID: YOUR-SUBS-ID
-  WEBAPP-NAME: az400-webapp-NAME
+  SUBSCRIPTION-ID: 91e52bd3-d1fe-4118-9b8f-1abe1affd52e
+  WEBAPP-NAME: az400-webapp-devops-test-app
 
 
 jobs:
@@ -18,7 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     #checkout the repository
-    - uses: actions/checkout@v2
+    - name: Repository checkout
+      uses: actions/checkout@v2
     #prepare runner for desired .net version SDK
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
