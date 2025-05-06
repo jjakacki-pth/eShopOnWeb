@@ -1,3 +1,16 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+        "config:best-practices",
+        ":automergeMinor",
+        ":automergePatch",
+        ":ignoreUnstable",
+        ":prHourlyLimitNone",
+        ":prConcurrentLimit10",  
+        ":rebaseStalePrs",
+        ":automergeRequireAllStatusChecks",
+        ":dependencyDashboardApproval",
+        ":reviewer(jjakacki-pth)"
+    ],
+  "commitMessagePrefix": "WOR-5356 "
 }
