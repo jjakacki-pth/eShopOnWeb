@@ -12,5 +12,6 @@
         ":dependencyDashboardApproval",
         ":reviewer(jjakacki-pth)"
     ],
-  "commitMessagePrefix": "WOR-5356 "
+  "commitMessagePrefix": "WOR-5356 ",
+  "baseBranches": ["develop"]
 }
