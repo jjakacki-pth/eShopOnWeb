@@ -5,11 +5,10 @@
         ":automergeMinor",
         ":automergePatch",
         ":ignoreUnstable",
-        ":prHourlyLimitNone",
+        ":prHourlyLimit2",
         ":prConcurrentLimit10",  
         ":rebaseStalePrs",
         ":automergeRequireAllStatusChecks",
-        ":dependencyDashboardApproval",
-        ":reviewer(jjakacki-pth)"
+        ":dependencyDashboardApproval"
     ]
 }
